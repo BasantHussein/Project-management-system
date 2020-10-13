@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PMS">
+  <ClassDiagramComponents>
+    <Class name="Person" package="" visibility="public" xPosition="1108.0" yPosition="1893.0">
+      <Fields>
+        <Field name="name" type="string" visibility="protected"/>
+        <Field name="Id" type="int" visibility="protected"/>
+        <Field name="userName" type="string" visibility="protected"/>
+        <Field name="Pass" type="string" visibility="protected"/>
+        <Field name="Address" type="string" visibility="protected"/>
+        <Field name="age" type="int" visibility="protected"/>
+        <Field name="FM" type="FileManger" visibility="private"/>
+        <Field name="MyEx" type="MyException" visibility="private"/>
+        <Field name="PersonSalary" type="Salary" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setName" returnType="string" visibility="public">
+          <Argument type="string" name="name"/>
+        </Method>
+        <Method name="setId" returnType="int" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="setuserName" returnType="string" visibility="public">
+          <Argument type="string" name="userName"/>
+        </Method>
+        <Method name="setPass" returnType="string" visibility="public">
+          <Argument type="string" name="Pass"/>
+        </Method>
+        <Method name="setAddress" returnType="string" visibility="public">
+          <Argument type="string" name="Address"/>
+        </Method>
+        <Method name="setAge" returnType="int" visibility="public">
+          <Argument type="int" name="Age"/>
+        </Method>
+        <Method name="setSalary" returnType="double" visibility="public">
+          <Argument type="double" name="Salary"/>
+        </Method>
+        <Method name="getName" returnType="string" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="getuserName" returnType="string" visibility="public"/>
+        <Method name="getPass" returnType="string" visibility="public"/>
+        <Method name="getAddress" returnType="string" visibility="public"/>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="getSalary" returnType="double" visibility="public"/>
+        <Method name="Person" returnType="double" visibility="public">
+          <Argument type="string" name="Name"/>
+          <Argument type="int" name="id"/>
+          <Argument type="string" name="userName"/>
+          <Argument type="string" name="Pass"/>
+          <Argument type="sring" name="Address"/>
+          <Argument type="int" name="Age"/>
+          <Argument type="double" name="Salary"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="" visibility="public" xPosition="355.0" yPosition="1939.0">
+      <Fields>
+        <Field name="FileName" type="string" visibility="private"/>
+        <Field name="Employees" type="Arraylist&lt;Employees&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Employee" returnType="string" visibility="public">
+          <Argument type="string" name="Name"/>
+          <Argument type="int" name="id"/>
+          <Argument type="string" name="userName"/>
+          <Argument type="string" name="Pass"/>
+          <Argument type="sring" name="Address"/>
+          <Argument type="int" name="Age"/>
+          <Argument type="double" name="Salary"/>
+          <Argument type="string" name="FileName"/>
+        </Method>
+        <Method name="AddEmployee" returnType="void" visibility="public"/>
+        <Method name="CommitToFile" returnType="void" visibility="public"/>
+        <Method name="LoadFromFile" returnType="void" visibility="public"/>
+        <Method name="GetEmployeeIndex" returnType="int" visibility="public"/>
+        <Method name="DisplayEmployee" returnType="void" visibility="public"/>
+        <Method name="SearchEmployee" returnType="void" visibility="public"/>
+        <Method name="UpdateEmployee" returnType="void" visibility="public"/>
+        <Method name="DeleteEmployee" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="string" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Team Leader" package="" visibility="public" xPosition="126.0" yPosition="784.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Project Manager" package="" visibility="public" xPosition="680.0" yPosition="158.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Admin" package="" visibility="public" xPosition="1796.0" yPosition="580.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="AddUser" returnType="void" visibility="public">
+          <Argument type="string" name="name"/>
+          <Argument type="int" name="Id"/>
+          <Argument type="string" name="userName"/>
+          <Argument type="string" name="Position"/>
+        </Method>
+        <Method name="ViewProjects" returnType="void" visibility="public"/>
+        <Method name="DisplayUser" returnType="void" visibility="public"/>
+        <Method name="SearchUser" returnType="int" visibility="public">
+          <Argument type="int" name="Id"/>
+        </Method>
+        <Method name="DeleteUser" returnType="void" visibility="public">
+          <Argument type="int" name="Id"/>
+        </Method>
+        <Method name="UpdateUser" returnType="void" visibility="public">
+          <Argument type="string" name="userName"/>
+          <Argument type="string" name="Position"/>
+          <Argument type="int" name="Id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FileManager" package="" visibility="public" xPosition="126.0" yPosition="1246.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Write" returnType="void" visibility="public">
+          <Argument type="Object" name="obj"/>
+          <Argument type="string" name="Path"/>
+        </Method>
+        <Method name="Read" returnType="Object" visibility="public">
+          <Argument type="string" name="type"/>
+        </Method>
+        <Method name="Edit" returnType="void" visibility="public">
+          <Argument type="string" name="type"/>
+        </Method>
+        <Method name="SearchInFile" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Task" package="" visibility="public" xPosition="1108.0" yPosition="106.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Project" package="" visibility="public" xPosition="1900.0" yPosition="1000.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Report" package="" visibility="public" xPosition="326.0" yPosition="1596.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="My Exceptions" package="" visibility="public" xPosition="1438.0" yPosition="1653.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Salary" package="" visibility="public" xPosition="1511.0" yPosition="259.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vactions" package="" visibility="public" xPosition="326.0" yPosition="403.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Penelties" package="" visibility="public" xPosition="1796.0" yPosition="1418.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Employee" target="Person"/>
+    <IsRelation name="is" source="Admin" target="Person"/>
+    <HasRelation name="a" source="Person" target="FileManager" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Team Leader" target="Person"/>
+    <IsRelation name="is" source="Project Manager" target="Person"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
